@@ -12,9 +12,11 @@ nav img {
 
 .nav-no-color {
   background-color: transparent;
+  transition: all 100ms ease;
 }
 
 .nav-color {
+  transition: all 100ms ease;
   background-color: white;
   box-shadow: 1px -6px 57px -3px rgba(0,0,0,0.55);
 }
@@ -95,13 +97,30 @@ nav img {
   text-align: center;
 }
 
+.marquee-container-container {
+  width: 100%;
+  display:flex;
+  justify-content: center;
+}
+
+.marquee-container {
+  width: 100%;
+  margin: 10px 20px;
+  display: flex;
+  justify-content: center;
+  max-width: 1300px;
+  align-items: center;
+}
+
 .marquee-banner {
   padding: 30px;
-  margin-left: auto;
+  /* margin-left: auto; */
+  max-width: 1300px;
+
 }
 
 .banner-item-container {
-  width: 100%;
+  width: 290px;
   padding-left: calc(50% - 145px);
 }
 
@@ -219,7 +238,7 @@ nav img {
 }
 
 .news {
-  height: 600px;
+  height: 607px;
   background-color: white;
   padding: 25px;
   margin-bottom: 20px;
@@ -230,6 +249,7 @@ nav img {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .get-start {
@@ -252,19 +272,11 @@ nav img {
   position: relative;
 }
 
-.step-number {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background-color: #02d667;
-  position: absolute;
-  top: 10px;
-}
 
 .step-number h1 {
   line-height: 45px;
   font-size: 22px;
-
+  
 }
 
 .step h3 {
@@ -514,6 +526,8 @@ nav img {
   display: flex;
 }
 
+
+
 .sponsor-img-container img{
   margin-left: 35px;
 }
@@ -585,4 +599,179 @@ footer h6 {
   padding: 10px 30px;
   font-weight: 500;
   font-size: 13px;
+}
+
+.search-box-container {
+  margin: 15px 15px;
+  padding: 0 10px;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.coin-search-box {
+  border: none;
+  width: 100%;
+  line-height: 30px;
+  font-size: 15px;
+}
+
+::placeholder {
+  color: rgb(185, 185, 185)
+}
+
+.step-number {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgb(2, 214, 103);
+  position: absolute;
+  top: 10px;
+  transform: scale(1);
+  animation: pulseGreen 1s infinite;
+}
+
+.svg-container {
+  background-color: white;
+  
+  transform: scale(1);
+  animation: pulse 1s infinite;
+}
+
+
+
+.svg-container svg{
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 11px;
+  left: 10px;
+}
+
+@keyframes pulseGreen {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(2, 214, 103, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(2, 214, 103, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(2, 214, 103, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+@media (min-width:675px) {
+  
+  .split {
+    display: flex;
+    gap: 15px
+  }
+
+
+  .price-charts--item {
+    flex-basis: 50%;
+  }
+  
+  .steps {
+    display: flex;
+  }
+
+  .goto-link a {
+    white-space: nowrap;
+  }
+
+  .why-reason {
+    flex-direction: column;
+  }
+
+  .top-step-section, .bottom-step-section {
+    display: flex;
+  }
+  
+}
+
+@media (min-width: 769px) {
+  .top-slogan {
+    background-image: url("https://www.bitkub.com/static/images/poster.jpg");
+    color: white;
+  }
+
+  .price-table-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .benefit {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 0px 30px
+  }
+
+  .benefit h2 {
+    font-size: 45px;
+  }
+
+  .reason {
+    padding: 20px
+  }
+}
+
+@media (min-width: 1134px) {
+  .side-price-news {
+    display: flex;
+    width: 100%;
+  }
+
+  .market-price-section {
+    flex-basis: 75%;
+  }
+
+  .news-side-section {
+    flex-basis: 25%;
+  }
+
+  .forms {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .sign-up {
+    height: 250px;
+    padding-top: 5%
+  }
+}
+
+@media (min-width: 1200px) {
+  .price-charts {
+    flex-direction: row;
+  }
+
+  .split {
+    flex-grow: 1;
+  }
 }

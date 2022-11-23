@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import "./MarketPrice.css"
 
 export default function Price(props) {
@@ -9,16 +9,18 @@ export default function Price(props) {
     const high = props.coinPrice.high24hr.toLocaleString()
     const low = props.coinPrice.low24hr.toLocaleString()
 
-    
+
+    // console.log(props)
+
     const percentChange = props.coinPrice.percentChange
     function trend(percentChange) {
         if (percentChange < 0){
             return (
-                <span class="material-icons inside-form-box"><span class="material-symbols-outlined trending-arrow">arrow_drop_down</span></span>
+                <span className="material-icons inside-form-box"><span className="material-symbols-outlined trending-arrow">arrow_drop_down</span></span>
             )
         } else {
             return (
-                <span class="material-icons inside-form-box"><span class="material-symbols-outlined trending-arrow">arrow_drop_up</span></span>
+                <span className="material-icons inside-form-box"><span className="material-symbols-outlined trending-arrow">arrow_drop_up</span></span>
             )
         }
     }
@@ -26,16 +28,23 @@ export default function Price(props) {
     const trending = trend(percentChange)
 
     const styles = {
-        color: percentChange>=0 ? "green" : "red"
+        color: percentChange>=0 ? "#21D46C" : "red",
+        fontWeight: 600
     }
 
     const icon_name = name.toLowerCase()
     const icon_url = `https://coinicons-api.vercel.app/api/icon/${icon_name}`
 
+    const styles_star = {
+        color: props.coinPrice.isFavorite? "gold" : "grey",
+        fontSize: "18px"
+    }
+
     return (
         <div className="price">
             <div className="coin-name">
-                <img src={icon_url} alt="" className="coin-icon"/>
+                <span className="material-icons inside-form-box"><span className="material-symbols-outlined to-pointer" style={styles_star} onClick={() => props.handleClick(props.coinName)}>grade</span></span>
+                <img src={icon_url} className="coin-icon"/>
                 <p className="table-item">{name}</p>
             </div>
             <div className="last-price table-item" style={styles} >{lastPrice} ({trending}{percentChange}%)</div>

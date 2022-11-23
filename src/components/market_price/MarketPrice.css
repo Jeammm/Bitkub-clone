@@ -1,6 +1,6 @@
 .priceTable {
     width: 100%;
-    height: 495px;
+    height: 400px;
     overflow: auto;
 }
 
@@ -78,4 +78,54 @@
 
 .low24 {
     width: 95px;
+}
+
+.to-pointer:hover {
+    cursor: pointer
+}
+
+.tab {
+    display: none;
+}
+  
+.active-tab {
+    display: block;
+}
+
+.tab-selector {
+    display: flex;
+    padding-left: 40px;
+    margin: 16px 0;
+}
+
+.tab-button {
+    display: flex;
+    width: 106px;
+    height: 45px;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: center;
+}
+
+.tab-button:hover{
+    background-color: #dbdbdb;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+@media (min-width: 769px) {
+    .price, .price-column-header {
+        /* background-color: green; */
+        width: 100%
+    }
+
+    .price  > * , .price-column-header>*{
+        flex-grow: 1;
+    }
+
+    .tab-selector {
+        padding: 0;
+        border-bottom: 1px solid #b9b9b9ad;
+        margin: 5px 0;
+    }
 }

@@ -6,14 +6,67 @@ import Slider from "react-slick";
 
 export default class MarqueeClass extends Component {
   render() {
+
+    
+
     const settings = {
       dots: false,
       infinite: true,
       autoplay: true,
       autoplaySpeed: 2000,
       speed: 500,
-      slidesToShow: 1,
+      slidesToShow: 4,
       slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1400, // width to change options
+          settings: {
+            dots: false,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          }
+        },
+        {
+          breakpoint: 1200, // width to change options
+          settings: {
+            dots: false,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 985, // width to change options
+          settings: {
+            dots: false,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 600, // width to change options
+          settings: {
+            dots: false,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+      ]
     };
     return (
       <div>

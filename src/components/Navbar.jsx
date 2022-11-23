@@ -19,17 +19,17 @@ export default function Navbar() {
         <header>
             <nav className={color? "nav-color" : "nav-no-color"}>
                 <img src={logo} />
-                <button class="hamburger">
-                    <span class="material-icons">menu</span>
+                <button className="hamburger">
+                    <span className="material-icons">menu</span>
                 </button>
             </nav>
             <div className="floater">
                 <div className="chatbox float">
                     <p>Chatbox</p>
-                    <span class="material-icons">person</span>
+                    <span className="material-icons">person</span>
                 </div>
                 <div className="support float">
-                <span class="material-icons">chat</span>
+                <span className="material-icons">chat</span>
                     <p>Support</p>
                 </div>
             </div>

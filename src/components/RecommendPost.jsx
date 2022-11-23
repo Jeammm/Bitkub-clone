@@ -8,7 +8,7 @@ export default function RecommendPost() {
                 <div className="quote-icon"><img src={quoteIcon} /></div>
                 <div className="info">
                     <p>Great service protect customer security thank you</p>
-                    <div className="stars"><span class="material-icons inside-form-box"><span class="material-symbols-outlined">grade</span><span class="material-symbols-outlined">grade</span><span class="material-symbols-outlined">grade</span><span class="material-symbols-outlined">grade</span><span class="material-symbols-outlined">grade</span></span></div>
+                    <div className="stars"><span className="material-icons inside-form-box"><span className="material-symbols-outlined">grade</span><span className="material-symbols-outlined">grade</span><span className="material-symbols-outlined">grade</span><span className="material-symbols-outlined">grade</span><span className="material-symbols-outlined">grade</span></span></div>
                     
                     <div className="post-author">
                         <div className="post-author--name">

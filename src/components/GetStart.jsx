@@ -2,7 +2,7 @@ import React from "react"
 
 export default function GetStart() {
 
-    const arrow = <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium tw-h-4 tw-w-4 mui-style-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ChevronRightIcon"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+    const arrow = <svg className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium tw-h-4 tw-w-4 mui-style-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ChevronRightIcon"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
 
     return (
         <div className="get-start">
