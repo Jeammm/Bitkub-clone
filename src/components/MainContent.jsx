@@ -26,9 +26,12 @@ export default function MainContnet() {
             </div>
             <MarqueeBanner />
             <Announcement />
+            
             <TopCoinChart />
-            <PriceSearching />
-            <News />
+            <div className="side-price-news">
+                <PriceSearching />
+                <News />
+            </div>
             <GetStart />
             <Benefit />
             <WhyKub />
