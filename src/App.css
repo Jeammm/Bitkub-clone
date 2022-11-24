@@ -625,6 +625,7 @@ nav img {
 }
 
 .sponsor {
+  width: 100%;
   background-color: #21D46C;
   height: 70px;
   display: flex;
