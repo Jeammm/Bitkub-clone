@@ -14,23 +14,16 @@ import ReacommendPost from "./RecommendPost"
 export default function MainContnet() {
     return (
         <main>
-            <div className="top-slogan">
-                <div className="top-slogan--brag">
-                    <h1>เว็บไซต์เทรดเหรียญดิจิทัล</h1>
-                    <h1>ชั้นนำของประเทศไทย</h1>
-                </div>
-                <div className="top-slogan--detail">
-                    <p>Bitkub เป็นแพลตฟอร์มยุคใหม่ของการซื้อขาย</p>
-                    <p>และเก็บเหรียญต่าง ๆ ด้วยเงินบาท</p>
-                </div>
-            </div>
+            
             <MarqueeBanner />
             <Announcement />
             
             <TopCoinChart />
-            <div className="side-price-news">
-                <PriceSearching />
-                <News />
+            <div className="home-inner to-grey">
+                <div className="side-price-news">
+                    <PriceSearching />
+                    <News />
+                </div>
             </div>
             <GetStart />
             <Benefit />

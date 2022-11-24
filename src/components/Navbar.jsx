@@ -1,5 +1,6 @@
 import React, {useState} from "react"
-import logo from "../assets/images/logo.svg"
+import logo1 from "../assets/images/logo.svg"
+import logo2 from "../assets/images/logo-white.svg"
 
 export default function Navbar() {
 
@@ -17,12 +18,15 @@ export default function Navbar() {
 
     return (
         <header>
-            <nav className={color? "nav-color" : "nav-no-color"}>
-                <img src={logo} />
-                <button className="hamburger">
-                    <span className="material-icons">menu</span>
-                </button>
-            </nav>
+            <div className={color? "nav-color nav-bar" : "nav-no-color nav-bar"}>
+                <nav >
+                    <img src={logo1} className="first-logo1"/>
+                    <img src={logo2} className="first-logo2"/>
+                    <button className="hamburger">
+                        <span className="material-icons">menu</span>
+                    </button>
+                </nav>
+            </div>
             <div className="floater">
                 <div className="chatbox float">
                     <p>Chatbox</p>

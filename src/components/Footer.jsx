@@ -60,25 +60,26 @@ export default function Footer() {
                         <li><a href="#">ติดต่อด้านพัฒนาธุรกิจ</a></li>
                         <li><a href="#">ช่องทางการร้องเรียน</a></li>
                     </ul>
+                    <div className="trust">
+                        <img src="https://www.trustmarkthai.com/trust_banners/dbd_gold.png" alt="" />
+                        <img src="https://www.bitkub.com/_next/image?url=%2Fstatic%2Fimages%2Fsectigo_trust_seal_lg_140x54.png&w=256&q=75" alt="" />
+                    </div>
                 </div>
 
-
             </div>
-            <div className="trust">
-                <img src="https://www.trustmarkthai.com/trust_banners/dbd_gold.png" alt="" />
-                <img src="https://www.bitkub.com/_next/image?url=%2Fstatic%2Fimages%2Fsectigo_trust_seal_lg_140x54.png&w=256&q=75" alt="" />
+            
+            <div className="very-bottom">
+                <div className="social-link">
+                    <img src="https://www.bitkub.com/_next/image?url=%2Fstatic%2Fimages%2Ficons%2Fsocial_media%2Ffacebook-2.png&w=64&q=75" alt="" />
+                    <img src="https://www.bitkub.com/_next/image?url=%2Fstatic%2Fimages%2Ficons%2Fsocial_media%2Finstagram-2.png&w=64&q=75" alt="" />
+                    <img src="https://www.bitkub.com/_next/image?url=%2Fstatic%2Fimages%2Ficons%2Fsocial_media%2Ftwitter-2.png&w=64&q=75" alt="" />
+                    <img src="https://www.bitkub.com/_next/image?url=%2Fstatic%2Fimages%2Ficons%2Fsocial_media%2Flineat-2.png&w=64&q=75" alt="" />
+                    <img src="https://www.bitkub.com/_next/image?url=%2Fstatic%2Fimages%2Ficons%2Fsocial_media%2Ftelegram-2.png&w=64&q=75" alt="" />
+                    <img src="https://www.bitkub.com/_next/image?url=%2Fstatic%2Fimages%2Ficons%2Fsocial_media%2Flinkedin-2.png&w=64&q=75" alt="" />
+                    <img src="https://www.bitkub.com/_next/image?url=%2Fstatic%2Fimages%2Ficons%2Fsocial_media%2Fyoutube-2.png&w=64&q=75" alt="" />
+                </div>
+                <h6>© 2022 BITKUB ONLINE CO., LTD ALL RIGHT RESERVED</h6>
             </div>
-            <hr />
-            <div className="social-link">
-                <img src="https://www.bitkub.com/_next/image?url=%2Fstatic%2Fimages%2Ficons%2Fsocial_media%2Ffacebook-2.png&w=64&q=75" alt="" />
-                <img src="https://www.bitkub.com/_next/image?url=%2Fstatic%2Fimages%2Ficons%2Fsocial_media%2Finstagram-2.png&w=64&q=75" alt="" />
-                <img src="https://www.bitkub.com/_next/image?url=%2Fstatic%2Fimages%2Ficons%2Fsocial_media%2Ftwitter-2.png&w=64&q=75" alt="" />
-                <img src="https://www.bitkub.com/_next/image?url=%2Fstatic%2Fimages%2Ficons%2Fsocial_media%2Flineat-2.png&w=64&q=75" alt="" />
-                <img src="https://www.bitkub.com/_next/image?url=%2Fstatic%2Fimages%2Ficons%2Fsocial_media%2Ftelegram-2.png&w=64&q=75" alt="" />
-                <img src="https://www.bitkub.com/_next/image?url=%2Fstatic%2Fimages%2Ficons%2Fsocial_media%2Flinkedin-2.png&w=64&q=75" alt="" />
-                <img src="https://www.bitkub.com/_next/image?url=%2Fstatic%2Fimages%2Ficons%2Fsocial_media%2Fyoutube-2.png&w=64&q=75" alt="" />
-            </div>
-            <h6>© 2022 BITKUB ONLINE CO., LTD ALL RIGHT RESERVED</h6>
         </footer>
     )
 }

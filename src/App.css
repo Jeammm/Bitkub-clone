@@ -1,13 +1,37 @@
-nav {
-  position: fixed;
+.home-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar {
   width: 100%;
-  z-index: 3;
   height: 60px;
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  position: relative;
+  max-width: 1280px;
+  height: 60px;
+  width: 100%;
+  z-index: 4;
 }
   
 nav img {
   position: absolute;
   top: 7px
+}
+
+
+.first-logo1 {
+  display: block;
+}
+
+.first-logo2 {
+  display: none;
 }
 
 .nav-no-color {
@@ -71,20 +95,67 @@ nav img {
   color: black;
 }
 
+.right-arrow-in-circle {
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.desktop-sign-up-button {
+  margin-top: 25px;
+  display: none;
+  gap: 5px;
+}
+
+.top-sign-up-button {
+  display: flex;
+  align-items: center;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.top-sign-up-button h4 {
+  font-weight: 300;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.free-sign-up, .green-marquee {
+  background-color: #02d667;
+}
+
+.market {
+  background-color: #303030;
+}
+
+.market h4 {
+  font-weight: 600;
+}
+
+.green {
+  fill: #02d667;
+}
+
 .top-slogan {
-  height: 400px;
+  height: 552px;
   background-image: url("./assets/images/bg.jpg");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 75px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  position: relative;
 }
 
+.top-slogan-quote-container {
+  width: 100%;
+  max-width: 1280px;
+  align-self: center;
+}
 
-.top-slogan--brag > h1{
+.top-slogan--brag > h1 {
   font-size: 26px;
   line-height: 40px;
   font-weight: 300;
@@ -101,6 +172,8 @@ nav img {
   width: 100%;
   display:flex;
   justify-content: center;
+  position: absolute;
+  bottom: 0px;
 }
 
 .marquee-container {
@@ -113,7 +186,7 @@ nav img {
 }
 
 .marquee-banner {
-  padding: 30px;
+  /* padding: 30px; */
   /* margin-left: auto; */
   max-width: 1300px;
 
@@ -149,20 +222,39 @@ nav img {
   font-family: sans-serif;
 }
 
+.side-price-news {
+  width: 100%;
+  max-width: 1280px;
+}
+
+.to-grey{
+  background-color: #f5f5f5;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+
 .price-charts {
   display: flex;
   flex-direction: column;
   gap: 12px;
   min-width: 220px;
+  width:100%;
+  max-width: 1280px;
 }
 
 .price-charts--item {
+  width: 100%;
   padding: 15px;
   background-color: white;
   cursor: pointer;
   min-width: 220px;
   box-shadow: 0px 1px 17px 0px rgba(0,0,0,0.23);
-
+  
 }
 
 .price-charts--item h5{
@@ -254,6 +346,7 @@ nav img {
 
 .get-start {
   padding: 30px 0;
+  max-width: 1280px;
 }
 
 .get-start h2 {
@@ -264,6 +357,8 @@ nav img {
 
 .steps {
   padding: 0 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .step {
@@ -306,13 +401,22 @@ nav img {
   width: 17px;
 }
 
-.benefit {
-  width: 100%;
-  text-align: center;
+.benefit-inner {
   background-image: url("./assets/images/bg2.jpg");
   background-position: top;
   background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.benefit {
+  
+  text-align: center;
+  
   padding: 30px 15px;
+  
+  max-width: 1280px
 }
 
 .benefit h2 {
@@ -524,6 +628,7 @@ nav img {
   background-color: #21D46C;
   height: 70px;
   display: flex;
+  max-width: 1280px;
 }
 
 
@@ -534,17 +639,24 @@ nav img {
 
 
 footer {
-  background-color: rgb(22, 22, 21);
+  background-color: #131616;
   color: white;
   padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu-list {
   padding: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  border-bottom: 1px solid #848e9c5b
 }
 
 .trust {
-  padding-left: 35px;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -640,6 +752,10 @@ footer h6 {
   animation: pulse 1s infinite;
 }
 
+.menu-list {
+  display: flex;
+  flex-direction: column;
+}
 
 
 .svg-container svg{
@@ -648,6 +764,13 @@ footer h6 {
   position: absolute;
   top: 11px;
   left: 10px;
+}
+
+.very-bottom {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
 @keyframes pulseGreen {
@@ -686,8 +809,10 @@ footer h6 {
 
 @media (min-width:675px) {
   
+
+
   .split {
-    display: flex;
+    flex-direction: row;
     gap: 15px
   }
 
@@ -695,9 +820,33 @@ footer h6 {
   .price-charts--item {
     flex-basis: 50%;
   }
+
   
+  .benefit {
+    height: 614px;
+  }
+
+  .benefit h2 {
+    flex-basis: 50%;
+  }
+
+  .reason-container {
+    flex-basis: 50%;
+  }
+
+  #why-choose-kub {
+    align-self: flex-start;
+    font-size: 45px;
+    font-weight: 300;
+    padding: 60px 30px;
+  }
+
   .steps {
-    display: flex;
+    flex-direction: row;
+  }
+
+  .step {
+    flex-basis: 33.33%;
   }
 
   .goto-link a {
@@ -712,12 +861,80 @@ footer h6 {
     display: flex;
   }
   
+  .menu-list {
+    flex-direction: row;
+  }
+
+  .menu-list--item {
+    flex-shrink: 0;
+  }
+
+  .very-bottom {
+    flex-direction: row;
+  }
+
+  .social-link {
+    order: 2;
+  }
+
+  .very-bottom h6 {
+    order: 1;
+  }
+
 }
 
 @media (min-width: 769px) {
+
+  .top-slogan-quote-container {
+    margin-left: 45px;
+  }
+
+  .nav-bar {
+    height: 80px;
+  }
+
+  nav {
+    height: 80px;
+  }
+
+  nav img {
+    top: 17px;
+  }
+
+  .hamburger {
+    top: 26px;
+  }
+
+  .first-logo1 {
+    display: none;
+  }
+  
+  .first-logo2 {
+    display: block;
+  }
+
   .top-slogan {
     background-image: url("https://www.bitkub.com/static/images/poster.jpg");
     color: white;
+    align-items: flex-start;
+    padding-top: 120px
+  }
+
+  .top-slogan--brag {
+    display: flex;
+  }
+
+  .top-slogan--brag h1 {
+    font-size: 32px;
+  }
+
+  .top-slogan--detail, .top-slogan--brag {
+    text-align: left;
+    margin-left: 15px;;
+  }
+
+  .price-charts--item {
+    max-width: 435px;
   }
 
   .price-table-header {
@@ -741,6 +958,12 @@ footer h6 {
   }
 }
 
+@media (min-width: 891px) {
+  .menu-list{
+    justify-content: center;
+  }
+}
+
 @media (min-width: 1134px) {
   .side-price-news {
     display: flex;
@@ -748,11 +971,11 @@ footer h6 {
   }
 
   .market-price-section {
-    flex-basis: 75%;
+    flex-basis: 74%;
   }
 
   .news-side-section {
-    flex-basis: 25%;
+    flex-basis: 26%;
   }
 
   .forms {
@@ -766,6 +989,25 @@ footer h6 {
   }
 }
 
+@media (min-width: 1025px) {
+  .top-slogan-quote-container {
+    margin: 0;
+  }
+
+  .top-slogan--brag {
+    font-size: 35px;
+  }
+
+  .top-slogan--detail {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .desktop-sign-up-button {
+    display: flex;
+  }
+}
+
 @media (min-width: 1200px) {
   .price-charts {
     flex-direction: row;
@@ -773,5 +1015,13 @@ footer h6 {
 
   .split {
     flex-grow: 1;
+  }
+
+  .reason h3 {
+    font-size: 30px;
+  }
+
+  .reason p {
+    font-size: 16px;
   }
 }

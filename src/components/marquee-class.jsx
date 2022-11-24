@@ -27,7 +27,7 @@ export default class MarqueeClass extends Component {
             autoplaySpeed: 2000,
             speed: 500,
             slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
           }
         },
         {
