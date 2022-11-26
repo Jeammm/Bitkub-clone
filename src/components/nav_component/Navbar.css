@@ -1,0 +1,205 @@
+.small-nav {
+    display: flex;
+  }
+  
+  .med-nav {
+    display: none;
+  }
+  
+  .big-nav {
+    display: none;
+  }
+  
+  .nav-bar {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 3;
+    justify-content: center;
+    box-shadow: 0px 50px 60px -45px rgba(0,0,0,1) inset;
+  }
+
+  .navbar-menu {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+  
+  
+
+  nav {
+    position: relative;
+    max-width: 1280px;
+    height: 60px;
+    width: 100%;
+    z-index: 4;
+    display: flex;
+    align-self: center;
+  }
+    
+  nav img {
+    position: absolute;
+    top: 7px
+  }
+
+  .navbar-menu li p {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  
+
+  .black-menu li p {
+    color: black;
+  }
+
+  .invite-friend {
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+  }
+
+  .navbar-menu li {
+    cursor: pointer;
+    margin: 0 4px;
+    padding: 6px 16px;
+    border-radius: 4px;
+  }
+
+  .language-switch {
+    margin: 0 23px !important;
+  }
+  
+  .box-hover-white {
+    border: 1px solid white;
+  }
+
+  .box-hover-black {
+    border: 1px solid black;
+  }
+  
+
+  .box-hover-white p, .box-hover-black p {
+    margin: 8px 0;
+  }
+
+  .button-menu:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  
+  .first-logo1 {
+    display: block;
+  }
+  
+  .first-logo2 {
+    display: none;
+  }
+  
+  .nav-no-color {
+    background-color: transparent;
+    transition: all 100ms ease;
+  }
+  
+  .nav-color {
+    transition: all 100ms ease;
+    background-color: white;
+    box-shadow: 1px -6px 57px -3px rgba(0,0,0,0.55);
+  }
+  
+  .hamburger {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+  }
+  
+  .hamburger span {
+    font-size: 30px;
+    color: black;
+  } 
+  
+  .floater {
+    position: fixed;
+    bottom: 0px;
+    padding: 16px;
+    width: 100%;
+    height: 60px;
+    z-index: 3;
+  }
+  
+  .float {
+    display: flex;
+    position: absolute;
+    width: 131px;
+    height: 45px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .float > * {
+    padding: 2px;
+  }
+  
+  .chatbox {
+    background-color: #4263A2;
+    left: 16px;
+    color: white;
+  }
+  
+  .support {
+    background-color: #21D46C;
+    right: 16px;
+    color: black;
+  }
+
+
+@media (min-width: 769px) {
+  .small-nav {
+    display: none;
+  }
+
+  .med-nav {
+    display: flex;
+  }
+
+  .nav-bar {
+    height: 80px;
+  }
+
+  nav {
+    height: 80px;
+  }
+
+  nav img {
+    top: 17px;
+  }
+
+  .hamburger {
+    top: 26px;
+  }
+
+  .first-logo1 {
+    display: none;
+  }
+  
+  .first-logo2 {
+    display: block;
+  }
+
+}
+
+@media (min-width: 1280px) {
+    .med-nav {
+      display: none;
+    }
+  
+    .big-nav {
+      display: flex;
+    }
+  }

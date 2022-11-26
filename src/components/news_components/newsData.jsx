@@ -36,17 +36,17 @@ export default {
     siamblockchain: [
         {
             header: "Robert Kiyosaki ผู้แต่งหนังสือ “พ่อรวยสอนลูกรวย” กล่าว ยังคงเชื่อมั่นใน BTC และ ETH แม้จะมีวิกฤต FTX",
-            date: "Wed, 23 Nov 2022 11:44:49 +0700",
+            date: "Wed, 23 Nov 2022",
             banner: "https://siamblockchain.com/wp-content/uploads/2022/11/kiyosaki-150x150.jpg"
         },
         {
             header: "Ark Invest เข้าซื้อหุ้น Grayscale Bitcoin Trust เพิ่มอีก 54 ล้านบาท หลังตลาด Crypto ทำจุดต่ำสุดในรอบ 2 ปี",
-            date: "Wed, 23 Nov 2022 11:29:48 +0700",
+            date: "Wed, 23 Nov 2022",
             banner: "https://siamblockchain.com/wp-content/uploads/2022/11/unknown-2_11zon-3-150x150.png"
         },
         {
             header: "Vitalik Buterin ยืนยันจะก้มหัวให้ ‘Elon Musk’ ก็ต่อเมื่อระบบ verified ของ Twitter สามาถทำได้ผ่าน Andriod",
-            date: "Wed, 23 Nov 2022 10:36:18 +0700",
+            date: "Wed, 23 Nov 2022",
             banner: "https://siamblockchain.com/wp-content/uploads/2022/11/Screen-Shot-2565-11-23-at-10.25.15_11zon-150x150.png"
         }
     ]

@@ -6,10 +6,10 @@ export default function GetStart() {
 
     return (
         <div className="home-inner">
-            <div className="get-start">
+            <div className="get-start get-start-real">
                 <h2>เริ่มต้นการใช้งาน</h2>
                 <div className="steps">
-                    <div className="step">
+                    <div className="step get-start-step">
                         <div className="step-number">
                             <h1>1</h1>
                         </div>
@@ -17,7 +17,7 @@ export default function GetStart() {
                         <p>หากคุญสนใจในการเทรด crypto สมัครสมาชิกได้เลยที่นี่</p>
                         <a href="#">สมัครเลย {arrow}</a>
                     </div>
-                    <div className="step">
+                    <div className="step get-start-step">
                         <div className="step-number">
                             <h1>2</h1>
                         </div>
@@ -25,7 +25,7 @@ export default function GetStart() {
                         <p>ฝากเงินหรือเหรียญ crypto ด้วยการโอนเงินจากบัญชีธนาคาร หรือจากกระเป๋าเหรียญ crypto</p>
                         <a href="#">ช่องทางโอนเงิน {arrow}</a>
                     </div>
-                    <div className="step">
+                    <div className="step get-start-step">
                         <div className="step-number">
                             <h1>3</h1>
                         </div>

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Navbar from './components/Navbar'
+import Navbar from './components/nav_component/Navbar'
 import MainContent from './components/MainContent'
 
 import Footer from './components/Footer.jsx'
